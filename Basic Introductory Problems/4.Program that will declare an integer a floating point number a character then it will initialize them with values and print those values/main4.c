@@ -1,5 +1,8 @@
 #include<stdio.h>
 
+/*Program that will declare an integer, a floating point number, a character. Then it will
+initialize them with values and print those values.
+*/
 int main()
 {
     int num1;
