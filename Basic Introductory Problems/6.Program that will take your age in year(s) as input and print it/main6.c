@@ -8,9 +8,6 @@ int main()
     scanf("%d",&age);
 
     printf("My age is: %d\n",age);
-
-    scanf("%d",&age);
-
-    printf("My age is: %d\n",age);
+    
     return 0;
 }
