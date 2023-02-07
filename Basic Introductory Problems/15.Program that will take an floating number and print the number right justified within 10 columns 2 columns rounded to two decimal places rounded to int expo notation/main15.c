@@ -16,9 +16,8 @@ int main()
     float num1;
     scanf("%f", &num1);
 
-    int rounded = round(num1);
 
-    printf("Val:%10f\nVal:%2f\nVal:%.2f\nVal:%d\nVal:%e\n",num1,num1,num1,rounded,num1);
+    printf("Val:%10f\nVal:%2f\nVal:%.2f\nVal:%.0f\nVal:%e\n", num1, num1, num1, floor(num1), num1);//%.0f for floor format specifier.%d will give 0.
 
     return 0;
 }
