@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-//Program that will print “Hello World”.
+//Program that will print â€œHello Worldâ€.
 
 int main()
 {
