@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-//Program that will define a constant using “CONST” and print the value.
+//Program that will define a constant using â€œCONSTâ€ and print the value.
 
 int main()
 {
