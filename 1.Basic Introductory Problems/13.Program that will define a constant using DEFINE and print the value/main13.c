@@ -2,7 +2,7 @@
 #define height 200
 #define pi 3.14
 
-//Program that will define a constant using “DEFINE” and print the value
+//Program that will define a constant using â€œDEFINEâ€ and print the value
 
 int main()
 {
