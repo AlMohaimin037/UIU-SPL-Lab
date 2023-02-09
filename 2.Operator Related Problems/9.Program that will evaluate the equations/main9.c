@@ -2,9 +2,9 @@
 
 /*
 Program that will evaluate the following equations -
-X = a – b / 3 + c * 2 – 1
-Y = a – ( b / ( 3 + c ) * 2) - 1
-Z = a – ( ( b / 3) + c * 2) - 1
+X = a â€“ b / 3 + c * 2 â€“ 1
+Y = a â€“ ( b / ( 3 + c ) * 2) - 1
+Z = a â€“ ( ( b / 3) + c * 2) - 1
 */
 
 int main()
