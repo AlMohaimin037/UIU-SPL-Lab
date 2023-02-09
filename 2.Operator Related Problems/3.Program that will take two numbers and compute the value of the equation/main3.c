@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 /*Program that will take two numbers (a, b) as inputs and compute the value of the equation
-– (Without using math.h)*/
+â€“ (Without using math.h)*/
 //X = (3.31 * a^2 + 2.01 * b3) / (7.16 * b^2 + 2.01 * a^3)
 
 int main()
