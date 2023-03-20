@@ -9,9 +9,12 @@ int main()
     for(int i=1; i<=(2*n-1); i++)
     {
         // First Space
-        for(int j=1; j<=(2*n-2*i); j++)
+        if(i%2 != 0)
         {
-            printf(" ");
+            for(int j=1; j<=n-i; j++)
+            {
+                printf(" ");
+            }
         }
         
         // Pattern
