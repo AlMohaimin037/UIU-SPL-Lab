@@ -6,15 +6,19 @@ int main()
     
     scanf("%d", &n);
     
+    int spaces = n-1;
+    
     for(int i=1; i<=(2*n-1); i++)
     {
         // First Space
         if(i%2 != 0)
         {
-            for(int j=1; j<=n-i; j++)
+            for(int j=spaces; j>=1; j--)
             {
                 printf(" ");
             }
+            
+            spaces--;
         }
         
         // Pattern
