@@ -22,7 +22,7 @@ int main()
     }
     else
     {
-        maxPtr = &ptr2;
+        maxPtr = &ptr1;
     }
     
     printf("Maximum = %.2f\n", **maxPtr);
