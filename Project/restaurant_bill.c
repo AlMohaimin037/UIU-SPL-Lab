@@ -139,7 +139,7 @@ int main()
                     }
                     if(!invoiceFound)
                     {
-                        printf("Sorry the invoice for %s does not exists", name);
+                        printf("\n\nSorry the invoice for %s does not exists\n\n", name);
                     }
                     fclose(fp);
                     break;
