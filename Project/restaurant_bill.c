@@ -145,7 +145,7 @@ int main()
                     break;
 
                 case 4:
-                    printf("\n\t\t Bye Bye : )\n\n");
+                    printf("\n\t\t Thank you for visiting \n\n");
                     exit(0);
                     break;
 
