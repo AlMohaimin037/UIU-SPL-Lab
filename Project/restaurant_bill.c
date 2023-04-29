@@ -33,11 +33,12 @@ int main()
     char name[50];
     FILE *fp;
 
-    // Dashboard & Continuous loop
+    // Continuous loop
     while(contFlag == 'y')
     {
         float total = 0;
         int invoiceFound = 0;
+        // Dashboard
         printf("\t============Food Village============");
         printf("\n\nPlease select your preferable option");
         printf("\n\n1.Generate Invoice");
@@ -112,10 +113,9 @@ int main()
                     }
                     fclose(fp);
                     break;
-                
+
                 case 3:
                     printf("\nEnter the name of the customer:\t");
-                    //fgetc(stdin);
                     fgets(name, 50, stdin);
                     name[strlen(name)-1] = 0;
                     system("cls");
@@ -135,7 +135,7 @@ int main()
                             generateBillFooter(tot);
                             invoiceFound = 1;
                         }
-                        
+
                     }
                     if(!invoiceFound)
                     {
@@ -143,19 +143,19 @@ int main()
                     }
                     fclose(fp);
                     break;
-                
+
                 case 4:
                     printf("\n\t\t Bye Bye : )\n\n");
                     exit(0);
                     break;
-                
+
                 default:
                     printf("Sorry invalid option");
                     break;
         }
         printf("\nDo you want to perform another operation?[y/n]:\t");
         scanf("%s", &contFlag);
-        
+
     }
 
     printf("\n\n");
