@@ -192,14 +192,14 @@ void generateBillBody(char item[30], int qty, float price)
 void generateBillFooter(float total)
 {
     printf("\n");
-    float dis = 0.1 * total;
+    float dis = 0.05 * total;
     float netTotal = total - dis;
     float vat = 0.09 * netTotal;
     float gst = 0.08 * netTotal;
     float grandTotal = netTotal + vat + gst;
     printf("----------------------------------------\n");
     printf("Sub Total\t\t\t%.2f", total);
-    printf("\nDiscount @10%s\t\t\t%.2f", "%", dis);
+    printf("\nDiscount @5%s\t\t\t%.2f", "%", dis);
     printf("\n\t\t\t\t--------");
     printf("\nNet Total\t\t\t%.2f", netTotal);
     printf("\nVAT @9%s\t\t\t\t%.2f", "%", vat);
