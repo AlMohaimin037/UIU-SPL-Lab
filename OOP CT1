@@ -1,0 +1,66 @@
+/* Write the class named “Car” to represent a car in a 2-D coordinate
+ * system. Complete the following task sequentially:
+ *  Create a class named “Point” to represent a 2-D point with x & y.
+ *  Add constructor to the “Point” class to set value of x & y.
+ *  Add a field named “position” with type “Point” in the “Car” class.
+ *  Add a constructor to the “Car” class that takes the initial position of
+ * the car as argument and sets the “Position” field properly within the
+ * constructor.
+ *  Add a method named “move_forward” in the class “Car” that takes
+ * one parameter: “amount”.
+ * The method will increment the value of x or y of the position by the
+ * value of “amount”.
+ * Assume, all fields are of double datatype.
+ * Write the main method with the Main Class to initialize an array of
+ * class named “Car” with size of 10. Allocate objects for all the indices
+ * in the array using a loop
+ */
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Car[] cars = new Car[10];
+
+        for (int i = 0; i < cars.length; i++) {
+            System.out.print("Enter X coordinate for Car " + (i+1) + ": ");
+            double x = sc.nextDouble();
+            System.out.print("Enter Y coordinate for Car " + (i+1) + ": ");
+            double y = sc.nextDouble();
+
+            Point position = new Point(x, y);
+            cars[i] = new Car(position);
+        }
+
+        System.out.print("Enter the amount to move all cars forward: ");
+        double amount = sc.nextDouble();
+
+        for (int i = 0; i < cars.length; i++) {
+            cars[i].move_forward(amount);
+            System.out.println("Car " + (i+1) + " new position: (" + cars[i].position.x + ", " + cars[i].position.y + ")");
+        }
+    }
+}
+class Point {
+    double x, y;
+
+    Point(double x, double y) {
+        this.x = x;
+        this.y = y;
+    }
+}
+
+class Car {
+    Point position;
+
+    Car(Point position) {
+        this.position = position;
+    }
+
+    public void move_forward(double amount) {
+        position.x += amount;
+        position.y += amount;
+    }
+}
+
+
