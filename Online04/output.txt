@@ -1,0 +1,16 @@
+Student Name: Bob
+Exam Scores: [85, 79, 92]
+Average Score: 85.33333333333333
+
+Student Name: Alice
+Exam Scores: [92, 88, 75]
+Average Score: 85.0
+
+Student Name: Eva
+Exam Scores: [78, 86, 91]
+Average Score: 85.0
+
+Student Name: John
+Exam Scores: [90, 85, 78]
+Average Score: 84.33333333333333
+
